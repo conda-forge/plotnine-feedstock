@@ -1,8 +1,8 @@
 {% set name = "plotnine" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "2f2d611d1faef145b3b92381a86e6927bcbe88496802437e25685f83bf643e4c" %}
+{% set hash = "c461392d408a168b6a2160b1014c732d34fa1c0d4f642dc6c7ebc171173b74e9" %}
 {% set build = 0 %}
 
 package:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python
     - six
-    - mizani >=0.3.0
+    - mizani >=0.3.1
     - matplotlib >=2.0.0
     - numpy
     - scipy
@@ -55,7 +55,7 @@ about:
   license_family: GPL2
   summary: 'A grammar of graphics for python'
   dev_url: https://github.com/has2k1/plotnine
-  doc_url: https://plotnine.readthedocs.io/en/latest/
+  doc_url: https://plotnine.readthedocs.io
 
 extra:
   recipe-maintainers:
