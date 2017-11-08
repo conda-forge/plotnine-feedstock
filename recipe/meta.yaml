@@ -1,8 +1,8 @@
 {% set name = "plotnine" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "c461392d408a168b6a2160b1014c732d34fa1c0d4f642dc6c7ebc171173b74e9" %}
+{% set hash = "6f80949e72e9ffb38e0667903cf398e741809efe5768d59ee03c1853301d8c55" %}
 {% set build = 0 %}
 
 package:
@@ -17,6 +17,7 @@ source:
 build:
   number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
@@ -26,13 +27,13 @@ requirements:
   run:
     - python
     - six
-    - mizani >=0.3.1
-    - matplotlib >=2.0.0
+    - mizani >=0.4.1
+    - matplotlib >=2.1.0
     - numpy
-    - scipy
+    - scipy >=1.0.0
     - patsy >=0.4.1
     - statsmodels >=0.8.0
-    - pandas >=0.20.1
+    - pandas >=0.21.0
 
 test:
   imports:
