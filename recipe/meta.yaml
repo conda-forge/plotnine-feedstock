@@ -3,7 +3,6 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "68c8beb70eb49ede8de098e4a9cc2d3dcd5d875a9e17710439e575d3b53f8889" %}
-{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -11,29 +10,31 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
     - six
-    - mizani >=0.4.1
+    - mizani >=0.4.5
     - matplotlib >=2.1.0
     - numpy
     - scipy >=1.0.0
     - patsy >=0.4.1
     - statsmodels >=0.8.0
     - pandas >=0.21.0
+    - geopandas >=0.3.0
+    - descartes >=1.1.0
 
 test:
   imports:
