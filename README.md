@@ -14,12 +14,15 @@ Summary: A grammar of graphics for python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/plotnine-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/plotnine-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/plotnine-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/plotnine-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotnine/badges/version.svg)](https://anaconda.org/conda-forge/plotnine)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/plotnine/badges/downloads.svg)](https://anaconda.org/conda-forge/plotnine)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-plotnine-green.svg)](https://anaconda.org/conda-forge/plotnine) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/plotnine.svg)](https://anaconda.org/conda-forge/plotnine) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/plotnine.svg)](https://anaconda.org/conda-forge/plotnine) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/plotnine.svg)](https://anaconda.org/conda-forge/plotnine) |
 
 Installing plotnine
 ===================
