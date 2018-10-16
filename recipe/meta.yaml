@@ -1,8 +1,8 @@
 {% set name = "plotnine" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "68c8beb70eb49ede8de098e4a9cc2d3dcd5d875a9e17710439e575d3b53f8889" %}
+{% set hash = "242a478db5b4b5e990ee10035e75e5b9a2a3850532141143bd68fd6efaf25c49" %}
 
 package:
   name: {{ name|lower }}
@@ -20,20 +20,19 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.5.0
     - pip
 
   run:
-    - python
-    - six
-    - mizani >=0.4.5
-    - matplotlib >=2.1.0
+    - python >=3.5.0
+    - mizani >=0.5.1
+    - matplotlib >=3.0.0
     - numpy
     - scipy >=1.0.0
     - patsy >=0.4.1
     - statsmodels >=0.8.0
-    - pandas >=0.21.0
-    - geopandas >=0.3.0
+    - pandas >=0.23.4
+    # - geopandas >=0.3.0
     - descartes >=1.1.0
 
 test:
