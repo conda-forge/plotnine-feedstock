@@ -14,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.6.0
     - mizani >=0.6.0
-    - matplotlib >=3.1.1
+    - matplotlib-base >=3.1.1
     - numpy >=1.16.0
     - scipy >=1.2.0
     - patsy >=0.4.1
