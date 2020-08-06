@@ -5,7 +5,7 @@ Home: https://github.com/has2k1/plotnine
 
 Package license: GPL 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A grammar of graphics for python
 
