@@ -1,7 +1,7 @@
 {% set name = "plotnine" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "02f2b0435dae2e917198c5367fd97b010445d64d9888c6b7e755d3cdfe7ad057" %}
+{% set hash = "39de59edcc28106761b65238647d0b1f6212ea7f3a78f8be0b846616db969276" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >=3.6.0
     - pip
 
