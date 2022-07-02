@@ -1,7 +1,7 @@
 {% set name = "plotnine" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "39de59edcc28106761b65238647d0b1f6212ea7f3a78f8be0b846616db969276" %}
+{% set hash = "0e89a93015f3c71d6844ac7aa9fb0da09b908f5f7dfa7dd5d68a5ca32b2ebcea" %}
 
 package:
   name: {{ name|lower }}
