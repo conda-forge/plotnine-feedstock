@@ -3,7 +3,7 @@ About plotnine
 
 Home: https://github.com/has2k1/plotnine
 
-Package license: GPL 2.0
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plotnine-feedstock/blob/main/LICENSE.txt)
 
