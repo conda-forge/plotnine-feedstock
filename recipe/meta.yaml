@@ -38,6 +38,7 @@ requirements:
 test:
   requires:
     - pip
+    - pytest
   imports:
     - plotnine
     - plotnine.coords
@@ -54,6 +55,8 @@ test:
     # The pip version can reported incorrectly if setuptools_scm isn't available
     # at build time
     - pip list | grep -i {{ name }} | grep {{ version }}
+    - pip check
+    - pytest
 
 about:
   home: https://github.com/has2k1/plotnine
