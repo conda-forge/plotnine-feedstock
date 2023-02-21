@@ -39,6 +39,7 @@ test:
   requires:
     - pip
     - pytest
+    - pytest-cov
   imports:
     - plotnine
     - plotnine.coords
@@ -51,12 +52,16 @@ test:
     - plotnine.scales
     - plotnine.stats
     - plotnine.themes
+  source_files:
+    - "tests"
   commands:
     # The pip version can reported incorrectly if setuptools_scm isn't available
     # at build time
     - pip list | grep -i {{ name }} | grep {{ version }}
     - pip check
-    - pytest
+    - echo $PWD
+    - ls -larth
+    - pytest tests/
 
 about:
   home: https://github.com/has2k1/plotnine
