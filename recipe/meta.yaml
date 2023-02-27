@@ -63,7 +63,7 @@ test:
     - pip check
     - echo $PWD
     - ls -larth
-    - pytest tests/
+    - pytest
 
 about:
   home: https://github.com/has2k1/plotnine
