@@ -1,7 +1,7 @@
 {% set name = "plotnine" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "be852c6e50e331ad250151dc4120f269ee9ae5e795f67030f7794718b502592a" %}
+{% set hash = "f6a8878f8a7d44ba6644785efc9d1e18ac17abc1dd3815fd88015105d9ef99d6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -54,8 +54,8 @@ test:
     - plotnine.stats
     - plotnine.themes
   source_files:
-    - "tests"
-    - "pyproject.toml"
+    - tests
+    - pyproject.toml
   commands:
     # The pip version can reported incorrectly if setuptools_scm isn't available
     # at build time
