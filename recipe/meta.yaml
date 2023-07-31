@@ -13,7 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=3.8.0
     - matplotlib-base >=3.6.0
-    - mizani >=0.9.0
+    - mizani >=0.9.0, <0.10.0
     - numpy >=1.23.0
     - pandas >=1.5.0
     - patsy >=0.5.1
