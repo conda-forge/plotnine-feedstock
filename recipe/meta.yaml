@@ -1,7 +1,7 @@
 {% set name = "plotnine" %}
-{% set version = "0.12.2" %}
+{% set version = "0.12.3" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "f6a8878f8a7d44ba6644785efc9d1e18ac17abc1dd3815fd88015105d9ef99d6" %}
+{% set hash = "a38dcb3607fc003c1e59ae0c9d535dae7817650d1cbc2e56e56e5b3de88dfe99" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
