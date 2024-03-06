@@ -1,7 +1,7 @@
 {% set name = "plotnine" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "f598c3dad88912f503698d562329cdbfedc42f9661f429053f8d5cb75f24207c" %}
+{% set hash = "48df981179df82055511bf1670518dd106760c04328b16e378647a997484f8b3" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=3.9.0
     - matplotlib-base >=3.6.0
-    - pandas >=2.1.0
+    - pandas >=2.1.0,<3.0.0
     - mizani ==0.11.0
     - numpy >=1.23.0
     - scipy >=1.7.0
