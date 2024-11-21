@@ -2,6 +2,7 @@
 {% set version = "0.14.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash = "40091588cabbd1287fb9969e4f7d77ce50eefb1b2a15abb3486f27329ead745c" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -19,13 +20,13 @@ build:
 
 requirements:
   host:
-    - python >=3.10.0
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
 
   run:
-    - python >=3.10.0
+    - python >={{ python_min }}
     - matplotlib-base >=3.8.0
     - pandas >=2.2.0
     - mizani >=0.13.0,<0.14.0
@@ -36,6 +37,7 @@ requirements:
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
     - pytest-cov
