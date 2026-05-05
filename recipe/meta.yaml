@@ -33,8 +33,7 @@ requirements:
     - mizani >=0.14.0,<0.15.0
     - numpy >=1.23.5
     - scipy >=1.8.0
-    - statsmodels <=0.14.4  # [emscripten]
-    - statsmodels >=0.14.6  # [not emscripten]
+    - statsmodels >=0.14.6
 
 test:
   requires:
