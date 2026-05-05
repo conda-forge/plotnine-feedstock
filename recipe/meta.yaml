@@ -1,7 +1,7 @@
 {% set name = "plotnine" %}
-{% set version = "0.15.3" %}
+{% set version = "0.15.4" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "2e8130db4673e0daccb1fd1dfc9f2a6cd2e7843b14f861f4ab861dde1639045f" %}
+{% set hash = "4cc47539575670dbcbeed9cd44d0c3bb7973f815f679136ff3b70314266719b4" %}
 {% set python_min = "3.10" %}
 {% set build = 0 %}
 
@@ -33,8 +33,8 @@ requirements:
     - mizani >=0.14.0,<0.15.0
     - numpy >=1.23.5
     - scipy >=1.8.0
-    - statsmodels >=0.14.6
-    # - geopandas >=0.3.0
+    - statsmodels <=0.14.4  # [emscripten]
+    - statsmodels >=0.14.6  # [not emscripten]
 
 test:
   requires:
